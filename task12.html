@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12</title>
+    <style>
+        body{
+            display:flex;
+            align-items:center;
+            justify:center;
+        }
+        .container{
+            display:flex;
+            align-items:center;
+            justify-content:cemter;
+            width:700px;
+            padding:30px 80px;
+            background-color:rgb(167, 45, 82);
+        }
+        .form{
+            display:flex;
+            flex-direction:column;
+            row-gap:10px;
+            width:500px;
+            padding:50px;
+            padding-left:130px;
+            background-color:rgb(130, 33, 62);
+            color:white;
+            font-size:30px;
+        }
+        #name{
+            margin-left:29%;
+            padding:8px;
+            border-radius:3px;
+        }
+        #email{
+            margin-left:29%;
+            padding:8px;
+            border-radius:3px;
+        }
+        #pswd{
+            margin-left:20.5%;
+            padding:8px;
+            border-radius:3px;
+        }
+        #pn{
+            margin-left:7.5%;
+            padding:8px;
+            border-radius:3px;
+        }
+        .gender{
+            display:flex;
+        }
+        .genderradios{
+            font-size:20px;
+            margin-left:27%
+        }
+        #language{
+            padding:8px;
+            border-radius:3px;
+            margin-left:22%;
+        }
+        #zip{
+            padding:8px;
+            border-radius:3px;
+            margin-left:21%;
+        }
+        .about{
+            display:flex;
+        }
+        #about{
+            margin-left:30%;
+            padding:8px;
+            border-radius:3px;
+        }
+        .register{
+            font-weight:600;
+            font-size:20px;
+            border-radius:5px;
+            padding:15px;
+            width:470px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="name">
+               <label for="name">Name:</label>
+               <input type="text" id="name" placeholder="Your name"> 
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Your email"> 
+             </div>
+             <div class="pswd">
+                <label for="pswd">Password:</label>
+                <input type="text" id="pswd" > 
+             </div>
+             <div class="pn">
+                <label for="pn">Phone Number:</label>
+                <input type="number" id="pn" > 
+             </div>
+             <div class="gender">
+                <label for="gender">Gender:</label>
+                <div class="genderradios">
+                    <input type="radio" name="gender"/>Male
+                    <input type="radio" name="gender"/>Female
+                    <input type="radio" name="gender"/>Others
+                </div>
+             </div>
+             <div class="language">
+                <label for="language">language:</label>
+                <select name="Language" id="language">
+                    <option>Select Language</option>
+                    <option>Hindi</option>
+                    <option>English</option>
+                    <option>Tamil</option>
+                </select>
+             </div>
+             <div class="zip">
+                <label for="zip">Zip Code:</label>
+                <input type="number" id="zip">
+             </div>
+             <div class="about">
+                <label for="about">About:</label>
+                <input type="text" id="about">
+             </div>
+             <button class="register">Register</button>
+        </div>
+    </div>
+    
+</body>
+</html>
